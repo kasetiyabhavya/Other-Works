@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FreshCart Header</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+header{
+    background:#fff;
+    padding:15px 40px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.top-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:28px;
+    font-weight:bold;
+    color:#2e7d32;
+}
+
+.logo i{
+    font-size:32px;
+}
+
+.search-box{
+    flex:1;
+    margin:0 30px;
+}
+
+.search-box input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:5px;
+}
+
+.icons{
+    display:flex;
+    gap:20px;
+    font-size:20px;
+    color:#2e7d32;
+}
+
+.navbar{
+    margin-top:15px;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+    transition:.3s;
+}
+
+.navbar a:hover{
+    color:#2e7d32;
+}
+
+.btn{
+    background:#2e7d32;
+    color:#fff;
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="top-bar">
+
+<div class="logo">
+<i class="fa-solid fa-cart-shopping"></i>
+FreshCart
+</div>
+
+<div class="search-box">
+<input type="text" placeholder="Search for products...">
+</div>
+
+<button class="btn">All Categories</button>
+
+<div class="icons">
+<i class="fa-regular fa-heart"></i>
+<i class="fa-solid fa-user"></i>
+<i class="fa-solid fa-cart-shopping"></i>
+</div>
+
+</div>
+
+<nav class="navbar">
+<a href="#">Home</a>
+<a href="#">Shop</a>
+<a href="#">Categories</a>
+<a href="#">Deals</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+</body>
+</html>
