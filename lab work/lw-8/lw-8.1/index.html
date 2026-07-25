@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FreshCart Header</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    padding:30px;
+}
+
+.header{
+    background:#fff;
+    border:3px solid #000;
+    padding:10px 20px;
+}
+
+.top-bar{
+    display:flex;
+    justify-content:space-between;
+    font-size:12px;
+    color:#777;
+    margin-bottom:10px;
+}
+
+.main-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:bold;
+    color:#28a745;
+}
+
+.logo i{
+    margin-right:5px;
+}
+
+.search-box{
+    flex:1;
+    display:flex;
+}
+
+.search-box input{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.location{
+    padding:10px 15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    background:white;
+    cursor:pointer;
+}
+
+.icons{
+    display:flex;
+    gap:15px;
+    font-size:18px;
+    color:#444;
+}
+
+.menu{
+    margin-top:12px;
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.department-btn{
+    background:#28a745;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#555;
+    font-size:14px;
+}
+
+.menu a:hover{
+    color:#28a745;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+
+    <div class="top-bar">
+        <span>Super Value Deals - Save more with coupons</span>
+        <span>English ▼</span>
+    </div>
+
+    <div class="main-header">
+
+        <div class="logo">
+            <i class="fa-solid fa-cart-shopping"></i>
+            FreshCart
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search for products">
+        </div>
+
+        <button class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            Location
+        </button>
+
+        <div class="icons">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+
+    </div>
+
+    <div class="menu">
+
+        <button class="department-btn">
+            <i class="fa-solid fa-bars"></i>
+            All Departments
+        </button>
+
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Stores</a>
+        <a href="#">Mega Menu</a>
+        <a href="#">Pages</a>
+        <a href="#">Account</a>
+        <a href="#">Dashboard</a>
+        <a href="#">Docs</a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
