@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshCart - Shop Cart</title>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <span>Super Value Deals - Save more with coupons</span>
+        <div class="top-bar-right">
+            <select>
+                <option>English</option>
+                <option>Spanish</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="logo-section">
+            <div class="logo">
+                <i class="fa-solid fa-cart-shopping"></i> FreshCart
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+        <div class="header-right">
+            <button class="location-btn">
+                <i class="fa-solid fa-location-dot"></i> Location
+            </button>
+            <div class="header-icons">
+                <div class="icon-badge">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>5</span>
+                </div>
+                <i class="fa-regular fa-user" style="cursor: pointer;"></i>
+                <div class="icon-badge">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>1</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <button class="departments-btn">
+            <i class="fa-solid fa-layout-grid"></i> All Departments
+        </button>
+        <ul class="nav-links">
+            <li>Home <i class="fa-solid fa-chevron-down" style="font-size: 10px;"></i></li>
+            <li>Shop <i class="fa-solid fa-chevron-down" style="font-size: 10px;"></i></li>
+            <li>Stores <i class="fa-solid fa-chevron-down" style="font-size: 10px;"></i></li>
+            <li>Mega menu <i class="fa-solid fa-chevron-down" style="font-size: 10px;"></i></li>
+            <li>Pages <i class="fa-solid fa-chevron-down" style="font-size: 10px;"></i></li>
+            <li>Account <i class="fa-solid fa-chevron-down" style="font-size: 10px;"></i></li>
+            <li>Dashboard</li>
+            <li>Docs</li>
+        </ul>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <h1 class="cart-title">Shop Cart</h1>
+        <p class="cart-subtitle">Shopping in 382480</p>
+
+        <!-- Alert Banner -->
+        <div class="alert-banner">
+            You've got FREE delivery. Start checkout now!
+        </div>
+
+        <div class="cart-layout">
+            <!-- Left Side: Items List -->
+            <div>
+                <div class="cart-items">
+                    <!-- Item 1 -->
+                    <div class="cart-item">
+                        <img src="images/images_1.jpg" class="item-img">
+                        <div class="item-details">
+                            <h4>Haldiram's Sev Bhujia</h4>
+                            <p>250g</p>
+                            <button class="remove-btn"><i class="fa-regular fa-trash-can"></i> Remove</button>
+                        </div>
+                        <div class="quantity-selector">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                        <div class="item-price">$21.60</div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="cart-item">
+                        <img src="images/images_2.jpg" alt="NutriChoice Digestive" class="item-img">
+                        <div class="item-details">
+                            <h4>NutriChoice Digestive</h4>
+                            <p>250g</p>
+                            <button class="remove-btn"><i class="fa-regular fa-trash-can"></i> Remove</button>
+                        </div>
+                        <div class="quantity-selector">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                        <div class="item-price">$24.00</div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="cart-item">
+                        <img src="images/images_3.jpg" alt="Cadbury 5 Star Chocolate" class="item-img">
+                        <div class="item-details">
+                            <h4>Cadbury 5 Star Chocolate</h4>
+                            <p>385 g</p>
+                            <button class="remove-btn"><i class="fa-regular fa-trash-can"></i> Remove</button>
+                        </div>
+                        <div class="quantity-selector">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                        <div class="item-price">$33.25</div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="cart-item">
+                        <img src="images/images_4.jpg" alt="Onion Flavour Potato" class="item-img">
+                        <div class="item-details">
+                            <h4>Onion Flavour Potato</h4>
+                            <p>250g</p>
+                            <button class="remove-btn"><i class="fa-regular fa-trash-can"></i> Remove</button>
+                        </div>
+                        <div class="quantity-selector">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                        <div class="item-price">$3.00</div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="cart-item">
+                        <img src="images/images_5.jpg" alt="Salted Instant Popcorn" class="item-img">
+                        <div class="item-details">
+                            <h4>Salted Instant Popcorn</h4>
+                            <p>100g</p>
+                            <button class="remove-btn"><i class="fa-regular fa-trash-can"></i> Remove</button>
+                        </div>
+                        <div class="quantity-selector">
+                            <button>-</button>
+                            <span>1</span>
+                            <button>+</button>
+                        </div>
+                        <div class="item-price">$11.70</div>
+                    </div>
+                </div>
+
+                <!-- Bottom Cart Action Buttons -->
+                <div class="cart-actions">
+                    <button class="btn-continue">Continue Shopping</button>
+                    <button class="btn-proceed">Proceed to checkout</button>
+                </div>
+            </div>
+
+            <!-- Right Side: Order Summary -->
+            <div class="order-summary">
+                <h3>Summary</h3>
+                <div class="summary-row">
+                    <span>Item Subtotal</span>
+                    <span>$93.55</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping Fee</span>
+                    <span>$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Tax Vat 18%</span>
+                    <span>$16.84</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Subtotal</span>
+                    <span>$110.39</span>
+                </div>
+
+                <button class="checkout-btn">
+                    <span>Go to Checkout</span>
+                    <span>$110.39</span>
+                </button>
+
+                <p class="terms-text">
+                    By placing your order, you agree to be bound by the Freshcart <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+                </p>
+
+                <!-- Promo Code Section -->
+                <div class="promo-section">
+                    <h4>Add Promo or Gift Card</h4>
+                    <div class="promo-box">
+                        <input type="text" placeholder="Promo or Gift Card">
+                        <button>Redeem</button>
+                    </div>
+                    <a href="#" class="conditions-link">Terms & Conditions apply</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Buy Now Button -->
+    <div class="floating-buy">
+        <i class="fa-solid fa-bag-shopping"></i> Buy Now
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div>© 2022 - 2025 FreshCart eCommerce HTML Template. All rights reserved. Powered by <strong>Codescandy</strong></div>
+        <div class="footer-social">
+            <span>Follow us on</span>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
