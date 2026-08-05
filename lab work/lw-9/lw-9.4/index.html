@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshCart - Snacks & Munchies</title>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animate.css for Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Header -->
+    <header class="site-header wow animate__animated animate__fadeInDown" data-wow-duration="1.2s">
+        <div class="top-bar">
+            <span>Super Value Deals - Save more with coupons</span>
+            <div class="top-links">
+                <a href="#">English <i class="fa-solid fa-chevron-down"></i></a>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="logo-area">
+                <h1 class="logo spin-horizontal">
+                    <i class="fa-solid fa-cart-shopping"></i> FreshCart
+                </h1>
+                <button class="dept-btn"><i class="fa-solid fa-bars"></i> All Departments</button>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <div class="location-picker"><i class="fa-solid fa-location-dot"></i> Location</div>
+            </div>
+            <div class="user-actions">
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+            </div>
+        </div>
+        <!-- Center aligned Navigation Menu -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#">Home <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#">Shop <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#">Stores <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#">Mega menu <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#">Account <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Docs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="container">
+        <!-- Banner Section with Spin Animation -->
+        <section class="banner-section wow animate__animated animate__zoomIn" data-wow-duration="1.4s" data-wow-delay="0.2s">
+            <h2 class="spin-horizontal">Snacks & Munchies</h2>
+        </section>
+
+        <!-- Product Controls -->
+        <div class="product-controls wow animate__animated animate__fadeIn" data-wow-duration="1.2s" data-wow-delay="0.4s">
+            <span class="products-found"><strong>8</strong> Products found</span>
+            <div class="control-options">
+                <button class="icon-btn"><i class="fa-solid fa-table-cells"></i></button>
+                <button class="icon-btn"><i class="fa-solid fa-list"></i></button>
+                <select class="select-box">
+                    <option>Show: 50</option>
+                </select>
+                <select class="select-box">
+                    <option>Sort by: Featured</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Product Grid (Wrapper for Left and Right halves split/join animation) -->
+        <div class="product-grid-wrapper" id="gridWrapper">
+            <div class="product-grid">
+                <!-- Card 1 -->
+                <div class="product-card" onclick="triggerGridSplitJoin()">
+                    <span class="badge sale">Sale</span>
+                    <div class="product-img-box">
+                        <img src="images/images_1.jpg" alt="Haldiram's Sev Bhujia">
+                    </div>
+                    <span class="category">Snacks & Munchies</span>
+                    <h3>Haldiram's Sev Bhujia</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i> <span>4.5 (149)</span>
+                    </div>
+                    <div class="card-footer-flex">
+                        <span class="price">$18 <small>$24</small></span>
+                        <button class="add-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="product-card" onclick="triggerGridSplitJoin()">
+                    <span class="badge sale">14%</span>
+                    <div class="product-img-box">
+                        <img src="images/images_2.jpg" alt="NutriChoice Digestive">
+                    </div>
+                    <span class="category">Snacks & Munchies</span>
+                    <h3>NutriChoice Digestive</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i> <span>4.8 (25)</span>
+                    </div>
+                    <div class="card-footer-flex">
+                        <span class="price">$24 <small>$28</small></span>
+                        <button class="add-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="product-card" onclick="triggerGridSplitJoin()">
+                    <span class="badge hot">Hot</span>
+                    <div class="product-img-box">
+                        <img src="images/images_3.jpg" alt="Cadbury 5 Star Chocolate">
+                    </div>
+                    <span class="category">Snacks & Munchies</span>
+                    <h3>Cadbury 5 Star Chocolate</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i> <span>4.3 (4)</span>
+                    </div>
+                    <div class="card-footer-flex">
+                        <span class="price">$35 <small>$38</small></span>
+                        <button class="add-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="product-card" onclick="triggerGridSplitJoin()">
+                    <span class="badge sale">-27%</span>
+                    <div class="product-img-box">
+                        <img src="images/images_4.jpg" alt="Onion Flavor Potato">
+                    </div>
+                    <span class="category">Snacks & Munchies</span>
+                    <h3>Onion Flavor Potato</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i> <span>4.5 (25)</span>
+                    </div>
+                    <div class="card-footer-flex">
+                        <span class="price">$3 <small>$4</small></span>
+                        <button class="add-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="product-card" onclick="triggerGridSplitJoin()">
+                    <span class="badge sale">Sale</span>
+                    <div class="product-img-box">
+                        <img src="images/images_5.jpg" alt="Salted Instant Popcorn">
+                    </div>
+                    <span class="category">Instant Food</span>
+                    <h3>Salted Instant Popcorn</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i> <span>4.2 (45)</span>
+                    </div>
+                    <div class="card-footer-flex">
+                        <span class="price">$13.7 <small>$18</small></span>
+                        <button class="add-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="product-card" onclick="triggerGridSplitJoin()">
+                    <span class="badge hot">Hot</span>
+                    <div class="product-img-box">
+                        <img src="images/images_6.jpg" alt="Cadbury E-Bour Chocolate">
+                    </div>
+                    <span class="category">Snacks & Munchies</span>
+                    <h3>Cadbury E-Bour Chocolate</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i> <span>3.5 (12)</span>
+                    </div>
+                    <div class="card-footer-flex">
+                        <span class="price">$35 <small>$38</small></span>
+                        <button class="add-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="product-card" onclick="triggerGridSplitJoin()">
+                    <span class="badge sale">Sale</span>
+                    <div class="product-img-box">
+                        <img src="images/images_7.jpg" alt="Instantmix Sev Bhujia">
+                    </div>
+                    <span class="category">Snacks & Munchies</span>
+                    <h3>Instantmix Sev Bhujia</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> <span>5.0 (8)</span>
+                    </div>
+                    <div class="card-footer-flex">
+                        <span class="price">$21.8 <small>$24</small></span>
+                        <button class="add-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="product-card" onclick="triggerGridSplitJoin()">
+                    <span class="badge sale">Sale</span>
+                    <div class="product-img-box">
+                        <img src="images/images_8.jpg" alt="Freshberry Choco Yogurt">
+                    </div>
+                    <span class="category">Dairy, Bread & Eggs</span>
+                    <h3>Freshberry Choco Yogurt</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i> <span>4.0 (18)</span>
+                    </div>
+                    <div class="card-footer-flex">
+                        <span class="price">$14.4 <small>$18</small></span>
+                        <button class="add-btn"><i class="fa-solid fa-plus"></i> Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination wow animate__animated animate__fadeInUp" data-wow-duration="1.2s" data-wow-delay="1.0s">
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn">4</button>
+            <button class="page-btn"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </main>
+
+    <!-- WOW.js & Custom Script for Full Grid Split and Join Animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+
+        function triggerGridSplitJoin() {
+            const wrapper = document.getElementById('gridWrapper');
+            if (wrapper.classList.contains('split-join-anim')) return;
+            wrapper.classList.add('split-join-anim');
+            setTimeout(() => {
+                wrapper.classList.remove('split-join-anim');
+            }, 800);
+        }
+    </script>
+</body>
+</html>

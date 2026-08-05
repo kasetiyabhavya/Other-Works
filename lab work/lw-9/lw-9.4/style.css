@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f3f4f6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+.site-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.top-bar {
+    background: #f9fafb;
+    padding: 8px 5%;
+    font-size: 13px;
+    color: #6b7280;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.top-links a {
+    color: #6b7280;
+    text-decoration: none;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: #0aad0a;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Horizontal 3D Spin Animation */
+@keyframes spinHorizontal {
+    0% { transform: perspective(400px) rotateY(0deg); }
+    50% { transform: perspective(400px) rotateY(360deg); }
+    100% { transform: perspective(400px) rotateY(360deg); }
+}
+
+.spin-horizontal {
+    display: inline-flex;
+    align-items: center;
+    animation: spinHorizontal 2.5s ease-in-out 1;
+    transform-origin: center;
+}
+
+.dept-btn {
+    background-color: #0aad0a;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.dept-btn:hover {
+    background-color: #088a08;
+    transform: translateY(-2px);
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 2px solid #0aad0a;
+    border-radius: 6px;
+    width: 45%;
+    background: #fff;
+    transition: box-shadow 0.3s ease;
+}
+
+.search-bar:focus-within {
+    box-shadow: 0 0 10px rgba(10, 173, 10, 0.3);
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    padding: 10px 15px;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-bar button {
+    background: transparent;
+    border: none;
+    padding: 0 15px;
+    cursor: pointer;
+    color: #6b7280;
+    transition: color 0.2s ease;
+}
+
+.search-bar button:hover {
+    color: #0aad0a;
+}
+
+.location-picker {
+    border-left: 1px solid #e5e7eb;
+    padding: 0 15px;
+    font-size: 13px;
+    color: #6b7280;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+.user-actions {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.user-actions a {
+    color: #333;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.user-actions a:hover {
+    color: #0aad0a;
+    transform: scale(1.1);
+}
+
+/* Center Aligned Navigation Menu */
+.nav-menu {
+    border-top: 1px solid #e5e7eb;
+    padding: 0 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 12px 0;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #4b5563;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-menu ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #0aad0a;
+    transition: width 0.3s ease;
+}
+
+.nav-menu ul li a:hover {
+    color: #0aad0a;
+}
+
+.nav-menu ul li a:hover::after {
+    width: 100%;
+}
+
+/* Main Container */
+.container {
+    max-width: 1250px;
+    margin: 25px auto;
+    padding: 0 20px;
+}
+
+/* Banner */
+.banner-section {
+    background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
+    padding: 45px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.banner-section h2 {
+    font-size: 32px;
+    color: #1e293b;
+    letter-spacing: -0.5px;
+}
+
+/* Controls */
+.product-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.control-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-btn {
+    background: #fff;
+    border: 1px solid #d1d5db;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #4b5563;
+    transition: all 0.2s ease;
+}
+
+.icon-btn:hover {
+    background: #0aad0a;
+    color: white;
+    border-color: #0aad0a;
+}
+
+.select-box {
+    padding: 6px 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    background: #fff;
+    color: #4b5563;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Product Grid Wrapper & Split-Join Animation (Left and Right halves separating and joining back) */
+.product-grid-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    transition: transform 0.8s ease;
+}
+
+/* Split-Join Keyframe Effect */
+@keyframes leftHalfSplit {
+    0% { transform: translateX(0); opacity: 1; }
+    50% { transform: translateX(-100vw); opacity: 0.2; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes rightHalfSplit {
+    0% { transform: translateX(0); opacity: 1; }
+    50% { transform: translateX(100vw); opacity: 0.2; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+.product-grid-wrapper.split-join-anim .product-card:nth-child(-n+4) {
+    animation: leftHalfSplit 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.product-grid-wrapper.split-join-anim .product-card:nth-child(n+5) {
+    animation: rightHalfSplit 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.product-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 11px;
+    padding: 4px 10px;
+    color: white;
+    border-radius: 4px;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.badge.sale {
+    background-color: #0aad0a;
+}
+
+.badge.hot {
+    background-color: #ef4444;
+}
+
+/* Clean Image Box (No dotted lines) */
+.product-img-box {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    background-color: #f9fafb;
+    border: none;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.product-img-box img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.category {
+    font-size: 12px;
+    color: #9ca3af;
+    margin-bottom: 5px;
+}
+
+.product-card h3 {
+    font-size: 15px;
+    color: #1f2937;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.rating {
+    font-size: 12px;
+    color: #f59e0b;
+    margin-bottom: 12px;
+}
+
+.rating span {
+    color: #9ca3af;
+    margin-left: 5px;
+}
+
+.card-footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.price small {
+    font-size: 12px;
+    color: #9ca3af;
+    text-decoration: line-through;
+    font-weight: normal;
+    margin-left: 4px;
+}
+
+.add-btn {
+    background-color: #e6f4ea;
+    color: #0aad0a;
+    border: none;
+    padding: 7px 14px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+    background-color: #0aad0a;
+    color: white;
+    box-shadow: 0 4px 12px rgba(10, 173, 10, 0.4);
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.page-btn {
+    background: #fff;
+    border: 1px solid #d1d5db;
+    width: 38px;
+    height: 38px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #4b5563;
+    transition: all 0.2s ease;
+}
+
+.page-btn.active, .page-btn:hover {
+    background-color: #0aad0a;
+    color: white;
+    border-color: #0aad0a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(10, 173, 10, 0.3);
+}
