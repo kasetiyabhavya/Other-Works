@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "DM Serif Text";
+}
+
+.p-0{
+    margin-left: -10px;
+}
+
+.float-left{
+    float: left;
+}
+
+.m-rg{
+    margin-right: 6px;
+}
+
+.d-block{
+    display: block;
+}
+.d-inline-block{
+    display: inline-block;
+}
+.container{
+    width: 100%;
+}
+header{
+    height: 90px;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+.logobar{
+    width: 20%;
+    height: 60px;
+    padding: 7px 3px;
+}
+
+.logobar img{
+    width: 60%;
+}
+
+.searchbar{
+    width: 60%;
+    height: 60px;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.searchbar input{
+    width: 60%;
+    padding: 9px 12px;
+    border: none;
+    background-color: #eee4e4;
+    border-radius: 16px;
+}
+.btnbar{
+    width: 10%;
+    height: 60px;
+    padding: 15px 0px;
+}
+.btnbar button{
+    width: 60%;
+    border: none;
+    border-radius: 14px;
+    padding: 6px;
+    color: white;
+    background: linear-gradient(270deg,rgba(250, 32, 32, 1) 35%, rgba(252, 176, 69, 1) 100%);
+}
+
+.notificationbar{
+    width: 10%;
+    height: 60px;
+    padding: 15px 0px;
+}
+
+.notificationbar i{
+    width: 25%;
+}
+
+.saidbar{
+    width: 20%;
+    height: 100vh;
+    padding: 70px 0px;
+    font-size: 20px;
+    background-color: #e0e0e0;
+}
+
+.saidbar ul li{
+    list-style: none;
+    padding: 5px 0px;
+    margin-bottom: 20px;
+}
+
+.saidbar ul li .link{
+    text-decoration: none;
+    padding: 20px 10px;
+    color: black;
+}
+
+li:hover{
+    background-color: #e8d4bc;
+    border-radius: 30px;
+    color: #d4658a; 
+    text-decoration: underline;
+    transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(233, 122, 122, 0.717);
+}
+
+.mainbar{
+    width: 80%;
+    height: 100vh;
+}
+
+.feadbar{
+    width: 60%;
+    height: 100vh;
+    padding: 10px 10px;
+}
+
+.mar-1{
+    margin-top: -160px;
+}
+
+.rightsaid-bar{
+    width: 40%;
+    height: 100vh;
+    /* border-left: 1px solid black; */
+    padding: 20px 20px;
+}
+
+.storyuser img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    cursor: pointer;
+    border: 3px solid #d35e5e;
+}
+
+.story ul{
+    list-style: none;
+}
+
+.story{
+    margin-bottom: 40px;
+}
+
+.text-center{
+    text-align: center; 
+}
+
+.imge{
+    width: 100%;
+    height: 100vh;
+    padding-left: 160px;
+}
+
+.imgganpti img{
+    width: 100%;
+    height: 600px;
+    border-radius: 5px;
+}
+
+.im{
+    width: 75%;
+    height: 100vh;
+    padding: 10px 20px;
+}
+
+.userpic img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.profile_name{
+    width: 150px;
+    font-size:16px;
+    padding: 10px 0px;
+    cursor: pointer;;
+}
+
+.btn{
+    width: 70px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.btn button{
+    border: none;
+    color: #0000ff;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.lcs{
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.speas{
+    width: 376px;
+    height: 20px;    
+}
+
+.icon{
+    margin-top: 10px;
+}
+
+.icon img{
+    width: 23px;
+    height: 23px;
+    margin-bottom: 10px;
+}
+
+.like-img img{
+    width: 20px;
+    height: 20px;
+    margin: 3px 5px;
+    border-radius: 100%;
+}
+
+.like-img span{
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0px 4px;
+}
+
+.Suggested{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.wh{
+    width: 300px;
+    height: 45px;
+}
+
+.wh:hover{
+    background-color: #69615759;
+    border-radius: 30px;
+    text-decoration: underline;
+    transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(187, 130, 230, 0.711);
+}
